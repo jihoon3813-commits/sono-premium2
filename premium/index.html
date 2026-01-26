@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소노아임레디 - 스마트한 라이프서비스</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+</head>
+
+<body>
+
+
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <span class="hero-badge"><i class="fas fa-bolt" style="margin-right: 5px;"></i> 제휴 기념 특별 런칭</span>
+
+            <h1 class="mb-2">
+                가전&포인트 미리 받고,<br>
+                납입금은 <span class="hero-highlight">100% 돌려받는</span><br>
+                스마트한 라이프서비스
+            </h1>
+
+            <p>
+                소노 스마트케어 가입 시, <br class="mobile-br">삼성/LG 최신 가전 렌탈금 지원은 물론<br>
+                프리미엄몰 전용 포인트까지 <br class="mobile-br">동시에 드립니다.
+            </p>
+
+            <div class="hero-benefits-row">
+                <!-- Benefit 01 -->
+                <div class="hero-benefit-box">
+                    <div class="hb-icon blue">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <div class="hb-text">
+                        <h4>BENEFIT 01</h4>
+                        <p>최신 가전 렌탈금 지원</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 02 -->
+                <div class="hero-benefit-box">
+                    <div class="hb-icon yellow">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <div class="hb-text">
+                        <h4>BENEFIT 02</h4>
+                        <p>프리미엄몰 포인트 증정</p>
+                    </div>
+                </div>
+
+                <!-- Special Benefit -->
+                <div class="hero-benefit-box special">
+                    <div class="hb-icon white">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="hb-text">
+                        <h4>SPECIAL</h4>
+                        <p style="line-height: 1.1;">납입금 100% 환급<span
+                                style="display: block; font-size: 0.8rem; font-weight: 400; opacity: 0.8; margin-top: 3px;">(상조
+                                미이용 시)</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-fine-print">
+                <p>* 가전 렌탈금 지원은 만기 익월 해약 또는 라이프 서비스 사용 시 적용됩니다.</p>
+                <p>* 만기 100% 환급은 만기 익월 해약 시 적용됩니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Benefits -->
+    <section id="benefits" class="section-padding">
+        <div class="container">
+            <div class="mb-3 text-center">
+                <h2 style="position: relative; display: inline-block;">
+                    프리미엄몰 회원님께만 <br class="mobile-br">드리는
+                    <span style="position: relative; z-index: 1;">더블 혜택
+                        <span
+                            style="content: ''; position: absolute; bottom: -10px; left: 0; width: 100%; height: 3px; background-color: var(--highlight-color);"></span>
+                    </span>
+                </h2>
+            </div>
+            <div class="benefit-grid">
+                <!-- Card 01 -->
+                <div class="benefit-card benefit-card-white">
+                    <div class="card-number">01</div>
+                    <div class="benefit-icon-box">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div>
+                        <h3 class="mb-1">최신 가전제품 렌탈금 지원</h3>
+                        <p class="desc-text">
+                            삼성/LG 최신 정품 가전 지원<br>
+                            이사 및 혼수 필수 가전 라인업 구성<br>
+                            배송부터 설치, AS까지 제조사 보장
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 02 -->
+                <div class="benefit-card benefit-card-blue">
+                    <div class="card-number">02</div>
+                    <div class="benefit-icon-box">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div>
+                        <h3 class="mb-1">프리미엄몰 전용 포인트</h3>
+                        <p class="desc-text">
+                            구좌 수에 따른 차등 포인트 추가 지급<br>
+                            지급된 포인트는 프리미엄몰 내에서<br>
+                            현금처럼 즉시 사용 가능합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps -->
+    <section id="steps" class="section-padding" style="background: white;">
+        <div class="container">
+            <div class="steps-header">
+                <h2>스마트케어, <br class="mobile-br">왜 합리적인 선택일까요?</h2>
+                <p>불필요한 지출이 아닌, <br class="mobile-br">미래를 위한 현명한 라이프케어의 시작입니다.</p>
+            </div>
+
+            <div class="steps-timeline">
+                <div class="step-item">
+                    <div class="step-circle">01</div>
+                    <h4 class="step-title">가입 즉시</h4>
+                    <p class="step-desc">원하는 가전제품 배송 &<br>프리미엄몰 포인트 적립</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-circle">02</div>
+                    <h4 class="step-title">납입 기간</h4>
+                    <p class="step-desc">매월 부담 없는 금액으로<br>라이프 서비스 보장 준비</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-circle">03</div>
+                    <h4 class="step-title">만기 시</h4>
+                    <p class="step-desc">납입한 원금 전액(100%) 환급<br>(만기 익월 해악 시<br>단, 라이프서비스 미사용 조건)</p>
+                </div>
+            </div>
+
+            <div class="rational-box">
+                <h3>"필요한 가전과 포인트는 <span class="rational-highlight">지금 누리고</span>, <br class="mobile-br">납입금은 <span
+                        class="rational-highlight">만기
+                        때</span> 그대로 돌려받으세요."</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section id="pricing" class="section-padding">
+        <div class="container">
+            <h2 class="mb-2">합리적인 월 납입 플랜</h2>
+            <p class="mb-4" style="opacity: 0.8;">부담 없는 납입금으로 가전&포인트 지원과<br>미래의 상조 서비스를 동시에 준비하세요.</p>
+            <div class="pricing-grid">
+                <!-- Plan 1 -->
+                <div class="pricing-card">
+                    <span class="plan-name">실속형 (2구좌)</span>
+                    <div class="plan-price">33,000<span class="plan-unit">원 / 월</span></div>
+
+                    <div class="plan-details">
+                        <div class="detail-row">
+                            <span class="detail-label">가전 혜택</span>
+                            <span class="detail-value">다이슨, 55인치 TV 등</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">포인트 적립</span>
+                            <span class="detail-value highlight"><i class="fas fa-bolt"></i> + 프리미엄몰 P 지급</span>
+                        </div>
+                        <div class="detail-row">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>
+                                    <span class="detail-label">납입 횟수</span>
+                                    <span class="detail-value">200회</span>
+                                </span>
+                                <span style="text-align: right;">
+                                    <span class="detail-label">환급 조건</span>
+                                    <span class="detail-value" style="color: #2ecc71;">만기 100%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 2 -->
+                <div class="pricing-card">
+                    <span class="plan-name">인기형 (3구좌)</span>
+                    <div class="plan-price">49,500<span class="plan-unit">원 / 월</span></div>
+
+                    <div class="plan-details">
+                        <div class="detail-row">
+                            <span class="detail-label">가전 혜택</span>
+                            <span class="detail-value">75인치 TV, SK매직 등</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">포인트 적립</span>
+                            <span class="detail-value highlight"><i class="fas fa-bolt"></i> + 프리미엄몰 P 지급</span>
+                        </div>
+                        <div class="detail-row">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>
+                                    <span class="detail-label">납입 횟수</span>
+                                    <span class="detail-value">200회</span>
+                                </span>
+                                <span style="text-align: right;">
+                                    <span class="detail-label">환급 조건</span>
+                                    <span class="detail-value" style="color: #2ecc71;">만기 100%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 3 (BEST) -->
+                <div class="pricing-card featured">
+                    <div class="badge-best">MOST POPULAR</div>
+                    <span class="plan-name">베스트 (4구좌)</span>
+                    <div class="plan-price" style="color: var(--highlight-color);">66,000<span class="plan-unit">원 /
+                            월</span></div>
+
+                    <div class="plan-details">
+                        <div class="detail-row">
+                            <span class="detail-label">가전 혜택</span>
+                            <span class="detail-value">86인치 TV, 김치냉장고 등</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">포인트 적립</span>
+                            <span class="detail-value highlight"><i class="fas fa-bolt"></i> + 프리미엄몰 P 지급</span>
+                        </div>
+                        <div class="detail-row">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>
+                                    <span class="detail-label">납입 횟수</span>
+                                    <span class="detail-value">200회</span>
+                                </span>
+                                <span style="text-align: right;">
+                                    <span class="detail-label">환급 조건</span>
+                                    <span class="detail-value" style="color: #2ecc71;">만기 100%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 4 -->
+                <div class="pricing-card">
+                    <span class="plan-name">프리미엄 (6구좌)</span>
+                    <div class="plan-price">99,000<span class="plan-unit">원 / 월</span></div>
+
+                    <div class="plan-details">
+                        <div class="detail-row">
+                            <span class="detail-label">가전 혜택</span>
+                            <span class="detail-value">얼음정수기 냉장고 등</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">포인트 적립</span>
+                            <span class="detail-value highlight"><i class="fas fa-bolt"></i> + 프리미엄몰 P 지급</span>
+                        </div>
+                        <div class="detail-row">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>
+                                    <span class="detail-label">납입 횟수</span>
+                                    <span class="detail-value">200회</span>
+                                </span>
+                                <span style="text-align: right;">
+                                    <span class="detail-label">환급 조건</span>
+                                    <span class="detail-value" style="color: #2ecc71;">만기 100%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-fine-print">
+                <p>* 만기 익월 해약 시 납입금 100% 환급 (단, 라이프서비스 미사용 조건)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="section-padding">
+        <div class="container">
+            <div class="gallery-header">
+                <div class="gallery-title">
+                    <h4>PREMIUM GALLERY</h4>
+                    <h2>LG/삼성 제휴 가전 라인업</h2>
+                    <p style="margin-top:10px; opacity:0.7;">원하시는 가입 구좌별 가전 혜택을 확인해보세요.</p>
+                </div>
+                <!-- Gallery Filters for Main Page -->
+                <div class="gallery-filters">
+                    <button class="filter-btn" onclick="filterProducts('2')">2구좌</button>
+                    <button class="filter-btn" onclick="filterProducts('3')">3구좌</button>
+                    <button class="filter-btn active" onclick="filterProducts('4')">4구좌</button>
+                    <button class="filter-btn" onclick="filterProducts('6')">6구좌</button>
+                </div>
+            </div>
+
+            <!-- Product Grid (4x3 Desktop = 12 items) -->
+            <div class="product-grid" id="main-product-grid">
+                <!-- Products will be loaded from Google Sheet -->
+                <div id="product-loading" style="text-align:center; padding: 50px; grid-column: 1/-1; color: #666;">
+                    <i class="fas fa-spinner fa-spin fa-2x"></i><br><br>상품 목록을 불러오고 있습니다...
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <button onclick="openOverlay()" class="btn btn-primary"
+                    style="padding: 15px 40px; border-radius: 30px;">전체 라인업 보기 <i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="gallery-fine-print">
+                * 제조사의 사정에 따라 제공 품목은 변경될 수 있습니다.
+            </div>
+        </div>
+    </section>
+
+    <!-- Overlay for All Products -->
+    <div id="product-overlay">
+        <div class="overlay-header">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <h3 style="margin:0;">전체 가전 라인업</h3>
+                    <button onclick="closeOverlay()" class="btn btn-white" style="border: 1px solid #ddd;">
+                        <i class="fas fa-times"></i> 뒤로가기
+                    </button>
+                </div>
+                <!-- Overlay Filters -->
+                <div class="gallery-filters" style="display: inline-flex;">
+                    <button class="filter-btn active" onclick="filterOverlay('all')">전체</button>
+                    <button class="filter-btn" onclick="filterOverlay('2')">2구좌</button>
+                    <button class="filter-btn" onclick="filterOverlay('3')">3구좌</button>
+                    <button class="filter-btn" onclick="filterOverlay('4')">4구좌</button>
+                    <button class="filter-btn" onclick="filterOverlay('6')">6구좌</button>
+                </div>
+            </div>
+        </div>
+        <div class="container section-padding">
+            <!-- This grid would be populated dynamically or static list of ALL products -->
+            <div class="product-grid" id="overlay-product-grid"></div>
+        </div>
+    </div>
+
+
+    <script>
+        // Global Constants & State
+        const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT-hpk-8qGCcb2lRO5WwRpKRD7k-2pjykxDhpC8SweNpG92JRzjMpYUrR9tDeZtCqFcjrsY-0Im_LyW/pub?output=csv";
+
+        // Fallback Data for Local Testing (when CORS blocks fetch)
+        const FALLBACK_CSV = `brand,model,name,tag,image
+LG,55UT931C,"55"" UHD TV",2구좌 전용,https://cdn.imweb.me/upload/S2025012040623186e3bd4/453eaf02b0250.jpg
+LG,FG21WN,트롬 세탁기(21kg),2구좌 전용,https://cdn.imweb.me/upload/S2025012040623186e3bd4/5da48b0576752.jpg
+LG,RH10VTA(모던 스테인리스),트롬 건조기,2구좌 전용,https://cdn.imweb.me/upload/S2025012040623186e3bd4/3952a96d84606.jpg
+LG,A737WA,오브제 코드제로 A7 청소기,2구좌 전용,https://cdn.imweb.me/upload/S2025012040623186e3bd4/09f074bd16313.jpg
+LG,AS305DWWA,공기청정기,2구좌 전용,https://cdn.imweb.me/upload/S2025012040623186e3bd4/e53c90585d54b.jpg
+LG,WD220MCB(카밍베이지),오브제 라이트온 온정 정수기,2구좌 전용,https://cdn.imweb.me/upload/S2025012040623186e3bd4/e7406c9afebd6.jpg
+LG,WD220MN(카밍 클레이 브라운),오브제 라이트온 온정 정수기,2구좌 전용,https://cdn.imweb.me/upload/S2025012040623186e3bd4/4b75f383b363f.jpg
+LG,55UT931C,"55"" UHD TV",3구좌,https://cdn.imweb.me/upload/S2025012040623186e3bd4/453eaf02b0250.jpg
+LG,FG21WN,트롬 세탁기(21kg),3구좌,https://cdn.imweb.me/upload/S2025012040623186e3bd4/5da48b0576752.jpg
+LG,RH10VTA(모던 스테인리스),트롬 건조기,3구좌,https://cdn.imweb.me/upload/S2025012040623186e3bd4/3952a96d84606.jpg
+LG,A737WA,오브제 코드제로 A7 청소기,3구좌,https://cdn.imweb.me/upload/S2025012040623186e3bd4/09f074bd16313.jpg
+LG,AS305DWWA,공기청정기,3구좌,https://cdn.imweb.me/upload/S2025012040623186e3bd4/e53c90585d54b.jpg
+LG,WD220MCB(카밍베이지),오브제 라이트온 온정 정수기,3구좌,https://cdn.imweb.me/upload/S2025012040623186e3bd4/e7406c9afebd6.jpg
+LG,WD220MN(카밍 클레이 브라운),오브제 라이트온 온정 정수기,3구좌,https://cdn.imweb.me/upload/S2025012040623186e3bd4/4b75f383b363f.jpg
+LG,55UT931C,"55"" UHD TV",4구좌 전용,https://cdn.imweb.me/upload/S2025012040623186e3bd4/453eaf02b0250.jpg
+LG,FG21WN,트롬 세탁기(21kg),4구좌 전용,https://cdn.imweb.me/upload/S2025012040623186e3bd4/5da48b0576752.jpg
+LG,RH10VTA(모던 스테인리스),트롬 건조기,4구좌 전용,https://cdn.imweb.me/upload/S2025012040623186e3bd4/3952a96d84606.jpg
+LG,A737WA,오브제 코드제로 A7 청소기,4구좌 전용,https://cdn.imweb.me/upload/S2025012040623186e3bd4/09f074bd16313.jpg
+LG,AS305DWWA,공기청정기,4구좌 전용,https://cdn.imweb.me/upload/S2025012040623186e3bd4/e53c90585d54b.jpg
+LG,WD220MCB(카밍베이지),오브제 라이트온 온정 정수기,4구좌 전용,https://cdn.imweb.me/upload/S2025012040623186e3bd4/e7406c9afebd6.jpg
+LG,WD220MN(카밍 클레이 브라운),오브제 라이트온 온정 정수기,4구좌 전용,https://cdn.imweb.me/upload/S2025012040623186e3bd4/4b75f383b363f.jpg`;
+
+        let allProducts = [];
+
+        // Main Entry Point
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProducts();
+        });
+
+        // 1. Data Loading
+        async function loadProducts() {
+            const mainGrid = document.getElementById('main-product-grid');
+            if (!mainGrid) return;
+
+            try {
+                let csvText = '';
+                try {
+                    const response = await fetch(SHEET_URL);
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    csvText = await response.text();
+                } catch (fetchErr) {
+                    console.warn("Live Fetch failed, using fallback data:", fetchErr);
+                    csvText = FALLBACK_CSV; // Use fallback
+                }
+
+                Papa.parse(csvText, {
+                    header: true,
+                    skipEmptyLines: true,
+                    complete: function (results) {
+                        allProducts = results.data;
+
+                        // Default Filter: 4구좌
+                        const defaultType = '4';
+                        const btns = document.querySelectorAll('.gallery-filters .filter-btn');
+                        btns.forEach(btn => {
+                            if (btn.textContent.includes('4구좌')) btn.classList.add('active');
+                            else btn.classList.remove('active');
+                        });
+
+                        // Initial Render
+                        filterMainGrid(defaultType);
+                    }
+                });
+            } catch (err) {
+                console.error("데이터 로드 실패:", err);
+                let errorMsg = '데이터를 불러오는 중 오류가 발생했습니다.';
+                mainGrid.innerHTML = `<div style="text-align:center; padding:50px; line-height: 1.6;">${errorMsg}</div>`;
+            }
+        }
+
+        // 2. Main Grid Filter
+        function filterProducts(type) {
+            // Update UI
+            const btns = document.querySelectorAll('.gallery-filters .filter-btn');
+            btns.forEach(btn => btn.classList.remove('active'));
+            if (event && event.target) event.target.classList.add('active');
+
+            filterMainGrid(type);
+        }
+
+        function filterMainGrid(type) {
+            if (!allProducts || allProducts.length === 0) return;
+
+            const filtered = allProducts.filter(p => {
+                const tag = p.tag || p['태그'] || p['Tag'] || '';
+                return tag.includes(type + '구좌');
+            });
+            // Show max 12 items
+            renderGrid('main-product-grid', filtered.slice(0, 12));
+        }
+
+        // 3. Overlay Functions
+        function openOverlay() {
+            const overlay = document.getElementById('product-overlay');
+            if (overlay) {
+                overlay.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+                // Render all initially if empty
+                const grid = document.getElementById('overlay-product-grid');
+                if (grid && grid.children.length === 0) {
+                    filterOverlay('all');
+                }
+            }
+        }
+
+        function closeOverlay() {
+            const overlay = document.getElementById('product-overlay');
+            if (overlay) {
+                overlay.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        function filterOverlay(type) {
+            const btns = document.querySelectorAll('#product-overlay .filter-btn');
+            if (btns) {
+                btns.forEach(btn => btn.classList.remove('active'));
+                if (event && event.target) event.target.classList.add('active');
+                else if (type === 'all' && btns.length > 0) btns[0].classList.add('active');
+            }
+
+            let filtered = allProducts;
+            if (type !== 'all') {
+                filtered = allProducts.filter(p => {
+                    const tag = p.tag || p['태그'] || p['Tag'] || '';
+                    return tag.includes(type + '구좌');
+                });
+            }
+            renderGrid('overlay-product-grid', filtered);
+        }
+
+        // 4. Generic Render Helper
+        function renderGrid(gridId, products) {
+            const grid = document.getElementById(gridId);
+            if (!grid) return;
+
+            if (!products || products.length === 0) {
+                grid.innerHTML = '<div style="text-align:center; padding:50px; grid-column: 1/-1;">해당하는 상품이 없습니다.</div>';
+                return;
+            }
+
+            grid.innerHTML = "";
+            products.forEach(item => {
+                const brand = item.brand || item['브랜드'] || item['Brand'] || 'BRAND';
+                const model = item.model || item['모델명'] || item['Model'] || '';
+                const name = item.name || item['상품명'] || item['Product Name'] || item['Name'];
+                const tag = item.tag || item['태그'] || item['Tag'] || '2구좌';
+                const image = item.image || item['이미지'] || item['Image'] || '';
+
+                if (!name || name === '상품명 없음') return;
+
+                const bgStyle = image ? `background-image: url('${image}');` : 'background-color: #eee;';
+
+                const html = `
+                <div class="product-item">
+                    <div class="product-img-box" style="${bgStyle} background-size: cover; background-position: center;">
+                        <div class="product-tag">${tag}</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="prod-model">${brand} ${model ? '/ ' + model : ''}</span>
+                        <h4 class="prod-title">${name}</h4>
+                        <div class="prod-benefit"><i class="fas fa-bolt"></i> PREMIUM POINT +</div>
+                    </div>
+                </div>
+                `;
+                grid.insertAdjacentHTML('beforeend', html);
+            });
+        }
+    </script>
+
+    <!-- Protocol Service Section -->
+    <section id="protocol" class="section-padding">
+        <div class="container">
+            <div class="protocol-container">
+                <div class="protocol-text">
+                    <div class="protocol-subtitle">PROFESSIONAL SERVICE</div>
+                    <h2>품격 있는 마지막 인사,<br>소노아임레디가 함께합니다</h2>
+                    <p class="protocol-desc">국가공인 장례지도사와 전문 도우미가 정성을 다해<br>고인의 명복을 빌며, 유가족의 슬픔을 함께 나누는 신뢰의 서비스를
+                        약속드립니다.
+                    </p>
+                    <ul class="protocol-list">
+                        <li><i class="far fa-check-circle"></i> 국가공인 장례지도사<br class="mobile-br">(입관 시 2명 투입 및 24시간 상시대기)
+                        </li>
+                        <li><i class="far fa-check-circle"></i> 프리미엄 장의 차량<br class="mobile-br">(최신형 리무진 및 대형 버스 즉시 투입)
+                        </li>
+                        <li><i class="far fa-check-circle"></i> 철저한 사후 관리<br class="mobile-br">(행사 후 품질 심사 및 피드백 상시 지원)
+                        </li>
+                    </ul>
+                    <button onclick="openProtocolModal()" class="btn btn-primary"
+                        style="margin-top: 20px; background-color: #0d1b2a;">의전 서비스 상세 보기 <i class="fas fa-search-plus"
+                            style="margin-left: 5px; color:white;"></i></button>
+                </div>
+                <div class="protocol-image">
+                    <img src="protocol_service.png" alt="Funeral Service">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Protocol Detail Modal -->
+    <div id="protocol-overlay">
+        <div class="protocol-modal">
+            <div class="protocol-modal-header">
+                <h3>의전 서비스 상세 구성</h3>
+                <button onclick="closeProtocolModal()" class="btn btn-white" style="padding: 5px 15px;"><i
+                        class="fas fa-times"></i> 닫기</button>
+            </div>
+            <div class="protocol-modal-body" style="background-color: #f8f9fa;">
+                <div class="protocol-grid">
+                    <!-- Card 1: 고인용품 -->
+                    <div class="protocol-card">
+                        <div class="p-card-header">고인용품 (입관/수시)</div>
+                        <div class="p-card-body">
+                            <div class="p-item">
+                                <div class="p-label">관</div>
+                                <div class="p-value">오동나무 45mm (매장)<br>오동나무 18mm/유골함 (화장)</div>
+                            </div>
+                            <div class="p-item">
+                                <div class="p-label">수의</div>
+                                <div class="p-value">대마 100% 기계직<br><span class="p-note">(꽃관보/도우미 대체 가능)</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: 입관용품 -->
+                    <div class="protocol-card">
+                        <div class="p-card-header">입관용품</div>
+                        <div class="p-card-body">
+                            <div class="p-item">
+                                <div class="p-label">의류</div>
+                                <div class="p-value">도포, 원삼, 천금, 지금<br>(수의와 동일 제품)</div>
+                            </div>
+                            <div class="p-item">
+                                <div class="p-label">기타</div>
+                                <div class="p-value">명정, 관보, 베개, 습신 등<br>규격품 일체 제공</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: 빈소용품 -->
+                    <div class="protocol-card">
+                        <div class="p-card-header">빈소 및 기타용품</div>
+                        <div class="p-card-body">
+                            <div class="p-item">
+                                <div class="p-label">빈소내 용품</div>
+                                <div class="p-value">향, 양초, 부의록, 위패 등<br>필요량 일체 제공</div>
+                            </div>
+                            <div class="p-item">
+                                <div class="p-label">대여/기타</div>
+                                <div class="p-value">향로, 촛대 (대여)<br>완장, 상장, 장갑 (제공)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: 의전 및 제단 -->
+                    <div class="protocol-card">
+                        <div class="p-card-header">의전 및 제단</div>
+                        <div class="p-card-body">
+                            <div class="p-item">
+                                <div class="p-label">현대식 상복</div>
+                                <div class="p-value">검정 양복 / 개량 한복<br><span class="p-highlight">각 3벌 (남녀 무관)</span>
+                                </div>
+                            </div>
+                            <div class="p-item">
+                                <div class="p-label">꽃장식</div>
+                                <div class="p-value">헌화용 국화 30송이<br>꽃바구니 2개 <br><span class="p-note text-danger">(제단 꽃장식
+                                        제외)</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: 차량지원 -->
+                    <div class="protocol-card">
+                        <div class="p-card-header">차량지원</div>
+                        <div class="p-card-body">
+                            <div class="p-item">
+                                <div class="p-label">이송차량</div>
+                                <div class="p-value">관내 (시, 군내) 무료 제공</div>
+                            </div>
+                            <div class="p-item">
+                                <div class="p-label">유족버스/<br>리무진</div>
+                                <div class="p-value">왕복 200km 제공<br><span class="p-highlight">택 1 (초과시 별도)</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: 인력지원 -->
+                    <div class="protocol-card">
+                        <div class="p-card-header">인력지원</div>
+                        <div class="p-card-body">
+                            <div class="p-item">
+                                <div class="p-label">장례지도사</div>
+                                <div class="p-value">국가공인 지도사 <span class="p-highlight">1명</span><br>(입관 및 행사 진행)</div>
+                            </div>
+                            <div class="p-item">
+                                <div class="p-label">의전도우미</div>
+                                <div class="p-value">전문 도우미 <span class="p-highlight">3명</span><br>(접객 및 빈소 관리)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px; font-size: 0.85rem; color: #666; padding: 15px; text-align: left;">
+                    ※ 상기 품목은 지역 및 장례식장 여건에 따라 동급의 타 제품으로 대체될 수 있습니다.<br>
+                    ※ 고객의 요청에 의해 품목을 추가하실 경우 별도의 비용이 발생할 수 있습니다.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openProtocolModal() {
+            document.getElementById('protocol-overlay').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+        function closeProtocolModal() {
+            document.getElementById('protocol-overlay').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+
+
+    <!-- Hybrid Solution Section (Replacing Lifestyle) -->
+    <section id="hybrid" class="section-padding">
+        <div class="container">
+            <div class="hybrid-header">
+                <span class="hybrid-subtitle">HYBRID SOLUTION</span>
+                <h2>상조를 넘어 <br class="mobile-br">라이프 스타일로 전환</h2>
+                <p>상조가 아직 필요하지 않다면<br> 웨딩, 크루즈, 골프, 어학연수 등 다양한 라이프 케어<br>서비스로 전환하여 가치 있게 사용할 수 있습니다.</p>
+            </div>
+
+            <div class="hybrid-grid">
+                <!-- Card 1: Wedding -->
+                <div class="hybrid-card">
+                    <div class="hybrid-icon-box">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>웨딩</h4>
+                    <p>품격 있는 웨딩부티크 스튜디오, 드레스 등 토탈 케어</p>
+                </div>
+
+                <!-- Card 2: Cruise -->
+                <div class="hybrid-card">
+                    <div class="hybrid-icon-box">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h4>크루즈</h4>
+                    <p>바다 위의 움직이는 호텔, 럭셔리 크루즈 여행</p>
+                </div>
+
+                <!-- Card 3: Overseas Travel -->
+                <div class="hybrid-card">
+                    <div class="hybrid-icon-box">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <h4>해외여행</h4>
+                    <p>전 세계 어디든 원하는 곳으로 떠나는 프리미엄 패키지</p>
+                </div>
+
+                <!-- Card 4: Golf -->
+                <div class="hybrid-card">
+                    <div class="hybrid-icon-box">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h4>골프</h4>
+                    <p>국내외 명문 골프장에서 즐기는 여유로운 라운딩</p>
+                </div>
+
+                <!-- Card 5: Study Abroad -->
+                <div class="hybrid-card">
+                    <div class="hybrid-icon-box">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>어학연수</h4>
+                    <p>자녀를 위한 해외 명문 학교 영어 캠프 및 연수 프로그램</p>
+                </div>
+
+                <!-- Card 6: Life Care -->
+                <div class="hybrid-card">
+                    <div class="hybrid-icon-box">
+                        <i class="far fa-life-ring"></i>
+                    </div>
+                    <h4>장지 서비스</h4>
+                    <p>장지시설(봉안당, 수목장 등) 고인을 안치하는 장소 및 시설 안내/섭외</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Benefit Section -->
+    <section id="membership" class="section-padding">
+        <div class="container">
+            <div class="membership-container">
+                <div class="membership-img-box">
+                    <img src="resort_membership.png" alt="Sono Resort Membership">
+                    <div class="membership-overlay-text">
+                        <h4>LIFE STYLE BENEFIT</h4>
+                        <h3>소노아임레디 멤버십</h3>
+                        <p>전국 어디서나 누리는 프리미엄 휴식</p>
+                    </div>
+                </div>
+                <div class="membership-content">
+                    <h2>가입과 동시에 누리는<br>소노아임레디 멤버십</h2>
+
+                    <div class="membership-feature">
+                        <div class="feature-icon"><i class="fas fa-home"></i></div>
+                        <div class="feature-text">
+                            <h4>소노호텔&리조트 객실 우대</h4>
+                            <p>소노벨, 솔비치 등 전국 리조트 객실 우대 가격 이용</p>
+                        </div>
+                    </div>
+
+                    <div class="membership-feature">
+                        <div class="feature-icon"><i class="far fa-smile"></i></div>
+                        <div class="feature-text">
+                            <h4>레저 시설 할인 혜택</h4>
+                            <p>오션월드, 스키장, 골프장 등 부대시설 할인권 제공</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Process Section (Replacing Form) -->
+    <section id="contact-process" class="section-padding">
+        <div class="container">
+            <h2 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--highlight-color); font-weight:500;">지금 바로
+                혜택을 누리고 싶다면</h2>
+            <h2 style="font-size: 2.3rem; margin-top: 0;">프리미엄몰에서 <br class="mobile-br">신청하세요!</h2>
+            <p>상담 신청 후 전문 플래너가 해피콜을 통해 <br class="mobile-br">상세 내용과 가입 절차를 안내해 드립니다.</p>
+
+            <div class="process-grid">
+                <!-- Step 1 -->
+                <div class="process-card">
+                    <div class="process-step-label">STEP 1</div>
+                    <div class="process-icon-box">
+                        <i class="far fa-calendar-alt"></i>
+                    </div>
+                    <h4>상담 신청</h4>
+                </div>
+                <!-- Step 2 -->
+                <div class="process-card">
+                    <div class="process-step-label">STEP 2</div>
+                    <div class="process-icon-box">
+                        <i class="fas fa-pen"></i>
+                    </div>
+                    <h4>전자 서명</h4>
+                </div>
+                <!-- Step 3 -->
+                <div class="process-card">
+                    <div class="process-step-label">STEP 3</div>
+                    <div class="process-icon-box">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h4>해피콜 안내</h4>
+                </div>
+                <!-- Step 4 -->
+                <div class="process-card">
+                    <div class="process-step-label">STEP 4</div>
+                    <div class="process-icon-box">
+                        <i class="far fa-credit-card"></i>
+                    </div>
+                    <h4>첫 회 납입</h4>
+                </div>
+                <!-- Step 5 -->
+                <div class="process-card">
+                    <div class="process-step-label">STEP 5</div>
+                    <div class="process-icon-box">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h4>가전 배송</h4>
+                </div>
+                <!-- Step 6 -->
+                <div class="process-card">
+                    <div class="process-step-label">STEP 6</div>
+                    <div class="process-icon-box">
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h4>포인트 지급</h4>
+                </div>
+            </div>
+
+
+
+    </section>
+
+    <!-- Important Notice Section -->
+    <section id="notice" class="section-padding" style="padding: 50px 0;">
+        <div class="container">
+            <h3 class="notice-title">중요정보 고지사항</h3>
+
+            <div class="notice-grid">
+                <!-- Left Column -->
+                <div>
+                    <div class="notice-item mb-4">
+                        <h4>환급기준 및 환급시기</h4>
+                        <ul class="notice-list">
+                            <li>중도해약에 대한 환급 기준은 상조서비스 약관 규정에 의해 환급됩니다.</li>
+                            <li>환급금은 신청완료일로부터 3영업일 이내에 수령하실 수 있습니다.</li>
+                            <li>구체적인 제공물품 및 서비스 내용은 상품정보에서 확인하실 수 있습니다.</li>
+                        </ul>
+                    </div>
+
+                    <div class="notice-item mb-4">
+                        <h4>고객 불입금 관리방법</h4>
+                        <p>[할부거래에 관한 법률] 제18조에 의거 선불식 할부거래업 등록하였으며, 동법 제27조에 따라 고객불입금의 50%는 상조보증공제조합에 소비자피해보상을 위한 공제계약을
+                            체결하고 있습니다.</p>
+                    </div>
+
+                    <div class="notice-item">
+                        <h4>상조서비스 이용 관련 참고사항</h4>
+                        <p><strong>주요장의상품 상세정보</strong><br>본 내용은 2024년 기본상품(297,399,498) 기준으로 작성되었으며, 가입시점 및 가입상품 특성에 따라
+                            일부 예외사항이 있음을 밝힙니다.</p>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div>
+                    <div class="notice-item mb-4">
+                        <h4>총 고객환급의무액, 상조 관련 자산 (2024년 12월말 기준)</h4>
+                        <table class="assets-table">
+                            <thead>
+                                <tr>
+                                    <th>총 고객환급의무액</th>
+                                    <th>상조 관련 자산</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1,068,990,831천원</td>
+                                    <td>1,221,786,713천원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p style="font-size: 0.8rem; color: #666;">※ 공인회계사 회계감사를 받았습니다 (회계법인성지)</p>
+                    </div>
+
+                    <div class="notice-item">
+                        <h4>소비자 유의사항</h4>
+                        <ol class="precautions-list">
+                            <li>상조서비스 용품은 생산국가, 지역의 사정 및 해당법률의 개정 등 사정에 따라 대체용품으로 교체될 수 있습니다.</li>
+                            <li>고인전용 리무진은 출상지에서 일차 장지까지만 서비스 됩니다.(화장 시, 화장장까지)</li>
+                            <li>장의차량 운행 시 발생되는 도로비용은 고객이 부담하셔야 합니다.</li>
+                            <li>규정 이하로 행사 시, 차액은 권리포기로 간주합니다(단, 수의 준비고객은 대체용품 지급)</li>
+                            <li>제공 품목에 대한 초과 수량 및 규격으로 주문 시, 추가금액을 부담해야 합니다.</li>
+                            <li>추가 사항에 대한 비용은 물가상승에 따라 변동 가능합니다.</li>
+                            <li>제단 꽃 장식은 장례식장 현장 사정에 따라 현금으로 지급 될 수 있습니다.</li>
+                            <li>장례식장 대여료 및 접객용 음식료는 불포함된 내용입니다.</li>
+                            <li>회비납입 도중 장례 발생 시에는 발인 전에 잔여회비를 일시불로 납부해야 합니다.</li>
+                            <li>장례서비스 기간은 3일장을 기준으로 합니다.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-row-main">
+                        <strong>(주)라이프앤조이 | 소노아임레디 공식총판</strong>
+                    </div>
+                    <div class="footer-row-sub">
+                        <span>경기도 하남시 미사대로 510, 624호(아이에스비즈타워)</span>
+                        <span class="bar">|</span>
+                        <span>사업자등록번호 : 388-86-02921</span>
+                    </div>
+                    <div class="footer-row-sub">
+                        <span>E-mail : lifenjoy0296@gmail.com</span>
+                        <span class="bar">|</span>
+                        <span>개인정보보호책임자 : 이지건(lifenjoy0108@gmail.co.kr)</span>
+                    </div>
+                </div>
+                <p class="copyright">COPYRIGHT © SINCE 2025 LIFE&JOY CO., LTD. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

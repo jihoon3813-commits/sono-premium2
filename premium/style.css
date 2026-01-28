@@ -976,6 +976,18 @@ a {
     padding-bottom: 10px;
 }
 
+.notice-banner {
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    border-left: 4px solid var(--highlight-color);
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    line-height: 1.6;
+    color: #333;
+    font-weight: 500;
+}
+
 .notice-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

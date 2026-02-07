@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/premium/index.html" },
+    { "source": "/premium", "destination": "/premium/index.html" },
+    { "source": "/public", "destination": "/public/index.html" }
+  ]
+}

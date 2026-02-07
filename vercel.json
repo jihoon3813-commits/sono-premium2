@@ -13,7 +13,11 @@
         },
         {
             "source": "/public",
-            "destination": "/public/index.html"
+            "destination": "/partner/index.html"
+        },
+        {
+            "source": "/partner",
+            "destination": "/partner/index.html"
         }
     ]
 }

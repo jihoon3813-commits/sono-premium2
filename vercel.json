@@ -1,18 +1,19 @@
 {
-    "trailingSlash": true,
+    "version": 2,
     "cleanUrls": true,
+    "trailingSlash": true,
     "rewrites": [
         {
-            "source": "/premium/(.*)",
-            "destination": "/premium/$1"
+            "source": "/",
+            "destination": "/premium/index.html"
         },
         {
-            "source": "/public/(.*)",
-            "destination": "/public/$1"
+            "source": "/premium",
+            "destination": "/premium/index.html"
         },
         {
-            "source": "/(.*)",
-            "destination": "/$1"
+            "source": "/public",
+            "destination": "/public/index.html"
         }
     ]
 }

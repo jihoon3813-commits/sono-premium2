@@ -4,20 +4,24 @@
     "trailingSlash": true,
     "rewrites": [
         {
-            "source": "/",
-            "destination": "/premium/index.html"
-        },
-        {
-            "source": "/premium",
-            "destination": "/premium/index.html"
+            "source": "/public/(.*)",
+            "destination": "/partner/$1"
         },
         {
             "source": "/public",
             "destination": "/partner/index.html"
         },
         {
-            "source": "/partner",
-            "destination": "/partner/index.html"
+            "source": "/premium/(.*)",
+            "destination": "/premium/$1"
+        },
+        {
+            "source": "/premium",
+            "destination": "/premium/index.html"
+        },
+        {
+            "source": "/",
+            "destination": "/premium/index.html"
         }
     ]
 }

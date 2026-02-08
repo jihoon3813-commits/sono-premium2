@@ -1500,6 +1500,14 @@ footer {
     color: #eee;
     font-size: 1rem;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-bi {
+    height: 1.44rem;
+    object-fit: contain;
 }
 
 .footer-row-sub {
@@ -1544,7 +1552,8 @@ footer {
     }
 
     .footer-row-main strong {
-        display: block;
+        display: flex;
+        justify-content: center;
         margin-bottom: 10px;
     }
 }
